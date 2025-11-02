@@ -1,159 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume - Jignyasa Patil</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jignyasa Jagdish Patil - Web Developer Resume</title>
   <style>
+    :root {
+      --accent: #facc15; /* yellow */
+      --text-dark: #1a1a1a;
+      --text-muted: #555;
+      --bg: #fffef8;
+      font-family: "Poppins", Arial, sans-serif;
+    }
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
+      background: var(--bg);
       margin: 0;
-      padding: 0;
-      line-height: 1.6;
+      padding: 40px;
+      color: var(--text-dark);
     }
-
-    header {
-      text-align: center;
-      background: #0077b6;
-      color: white;
-      padding: 2rem 1rem;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    .resume-section {
-      width: 80%;
+    .resume {
+      max-width: 850px;
+      margin: auto;
       background: white;
-      margin: 2rem auto;
-      padding: 2rem;
+      border-left: 8px solid var(--accent);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      padding: 40px 50px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    h2 {
-      color: #0077b6;
-      border-bottom: 2px solid #0077b6;
-      padding-bottom: 5px;
+    header {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
     }
-
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: var(--text-dark);
     }
-
-    .contact-info a {
-      color: #0077b6;
-      text-decoration: none;
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: #0077b6;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 6px;
-      text-decoration: none;
+    header p {
+      margin: 4px 0;
+      color: var(--text-muted);
       font-weight: 500;
-      transition: background 0.3s;
     }
-
-    .btn:hover {
-      background-color: #023e8a;
+    section {
+      margin-bottom: 22px;
     }
-
+    h2 {
+      font-size: 18px;
+      color: var(--accent);
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+    }
+    ul {
+      padding-left: 20px;
+      color: var(--text-muted);
+    }
+    .skills, .projects {
+      margin-top: 8px;
+    }
+    .skills span {
+      display: inline-block;
+      background: #f4f4f4;
+      color: #222;
+      padding: 6px 10px;
+      margin: 5px 6px 5px 0;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .project {
+      margin-bottom: 10px;
+    }
+    .project strong {
+      color: #111;
+    }
     footer {
       text-align: center;
-      padding: 1rem;
-      color: #555;
+      color: #777;
+      font-size: 13px;
+      margin-top: 20px;
+      border-top: 1px solid #eee;
+      padding-top: 10px;
+    }
+    @media (max-width: 600px) {
+      body { padding: 20px; }
+      .resume { padding: 25px; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Jignyasa Patil</h1>
-    <p>Computer Engineering Student | Web Developer</p>
-    <p class="contact-info">
-      📧 <a href="mailto:24amtics457@gmail.com">24amtics457@gmail.com</a> |
-      🌐 <a href="https://www.linkedin.com/in/prerna-patil-208426358">LinkedIn</a> |
-      💻 <a href="https://github.com/prernapatil2007">GitHub</a>
-    </p>
-  </header>
-
-  <section class="resume-section">
-    <h2>Objective</h2>
-    <p>To obtain a position where I can utilize my skills in web development and contribute to building creative and efficient digital solutions.</p>
-  </section>
-
-  <section class="resume-section">
-    <h2>Education</h2>
-    <ul>
-      <li><b>Bachelor of Engineering (Computer Engineering)</b> - Uka Tarsadia University of Bardoli</li>
-      <li>Expected Graduation: 2028</li>
-    </ul>
-  </section>
-
-  <section class="resume-section">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML — 90%</li>
-      <li>CSS — 85%</li>
-      <li>JavaScript — 70%</li>
-      <li>Git & GitHub — Intermediate</li>
-      <li>python</li>
-      <li>Programming with C</li>
-    </ul>
-  </section>
-
-  <section class="resume-section">
-    <h2>Projects</h2>
-    <div class="projects-list">
-            <article class="project">
-              <h4>Bakery Management System</h4>
-              <p>Full-stack style demo (frontend + data management) for a bakery — product listing, order form and admin-like views. Built with HTML/CSS/JS and structured for deployment to GitHub Pages (frontend) with repository link.</p>
-              <div class="project-links">
-                <a href="https://github.com/your-github-username/bakery-management-system" target="_blank" rel="noopener">GitHub</a>
-                <a href="#" target="_blank" rel="noopener">Live Demo</a>
-              </div>
-            </article>
-
-            <article class="project">
-              <h4>Portfolio Website (This Project)</h4>
-              <p>The portfolio itself — includes Home, Skills, Projects, Contact, and resume download. Prepared for GitHub Pages submission per IT4048.</p>
-              <div class="project-links">
-                <a href="https://github.com/your-github-username/YourName_PortfolioWebsite" target="_blank" rel="noopener">GitHub</a>
-                <a href="#" target="_blank" rel="noopener">Live Demo</a>
-              </div>
-  </section>
-
-  <section class="resume-section">
-    <h2>Achievements</h2>
-    <ul>
-      <li>Developed multiple responsive websites as academic projects.</li>
-      <li>Participated in college-level hackathons focused on web design.</li>
-    </ul>
-  </section>
-
-  <section class="resume-section">
-    <h2>Personal Information</h2>
-    <ul>
-      <li><b>Name:</b> Jignyasa Patil</li>
-      <li><b>Email:</b> 24amtics457@gmail.com</li>
-      <li><b>Location:</b> bardoli, India</li>
-    </ul>
-  </section>
-
-  <div style="text-align:center; margin-bottom: 2rem;">
-    <a href="c:\Users\Prerna\Downloads\Prerna_Sachin_Patil_Resume.pdf" class="btn" download>Download PDF Resume</a>
-    <a href="index.html" class="btn">Back to Portfolio</a>
+  <div class="resume">
+    <header>
+      <div class="top-buttons">
+    <a href="index.html" class="btn">← Back to Portfolio</a>
+    <a href="Prerna_Patil_Resume.pdf" class="btn" download>⬇ Download Resume (PDF)</a>
   </div>
+      <h1>JIGNYASA JAGDISH PATIL</h1>
+      <p>Web Developer | B.Tech Computer Science Student</p>
+      <p>📧 24amtics457@gmail.com | 📱 8459465904 | 📍 Bardoli, Gujarat</p>
+        <p>🔗 <a href=https://www.linkedin.com/in/jidnyasa-patil-805416312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app target="_blank">LinkedIn</a></p>
+        <p>💻 <a href=https://github.com/JignyasaPatil29/project_demo#target="_blank">GitHub</a></p>
+      </section>
 
-  <footer>
-    © 2025 JIgnyasa Patil | All Rights Reserved
-  </footer>
+    </header>
+
+
+    <section>
+      <h2>Career Objective</h2>
+      <p>To obtain a position as a Web Developer where I can apply my technical and creative skills in designing and developing responsive, user-friendly websites.</p>
+    </section>
+
+    <section>
+      <h2>Key Skills</h2>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript </span>
+        <span>PHP</span>
+        <span>Python</span>
+        <span>Git & GitHub</span>
+        <span>MY SQL</span>
+        <span>Java</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Academic Projects</h2>
+
+      <div class="project">
+        <strong>Personal Portfolio Website</strong>
+        <p>Developed a responsive portfolio using HTML, CSS, and JavaScript to showcase skills, education, and contact information.</p>
+      </div>
+
+      <div class="project">
+        <strong>Bakery Management website</strong>
+        <p>Created a user-friendly product layout using HTML, CSS, Javascript and SQL as a database amd PHP as a backened and a responsive grid layout.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>B.Tech in Computer Science and Engineering</strong><br>
+         Uka Tarsadia University, 2024 – 2028 (Expected)
+      </p>
+    </section>
+
+    
+
+    <section>
+      <h2>Languages</h2>
+      <p>English , Hindi (Fluent), Gujarati and Marathi (Native)</p>
+    </section>
+
+    <footer>
+      © 2025 Jignyasa Jagdish Patil — Last Updated: November 2025
+    </footer>
+  </div>
 </body>
 </html>
