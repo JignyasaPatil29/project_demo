@@ -16,3 +16,6 @@ HTML – Structure and content
 CSS – Styling and layout
 JavaScript – Interactivity and animations
 Git & GitHub – Version control and hosting
+
+License
+This project is licensed under the MIT License — you are free to use, modify, and distribute it with attribution.
